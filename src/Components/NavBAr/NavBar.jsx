@@ -4,16 +4,16 @@ import logo from '../../../public/logo.svg'
 const NavBar = () => {
   const navList = (
     <>
-      <NavLink><li>Home</li></NavLink>
-      <NavLink><li>About</li></NavLink>
-      <NavLink><li>Services</li></NavLink>
-      <NavLink><li>Blog</li></NavLink>
-      <NavLink><li>Contact</li></NavLink>
+      <NavLink><li className="text-lg font-semibold text-[#444444]">Home</li></NavLink>
+      <NavLink><li className="text-lg font-semibold text-[#444444]">About</li></NavLink>
+      <NavLink><li className="text-lg font-semibold text-[#444444]">Services</li></NavLink>
+      <NavLink><li className="text-lg font-semibold text-[#444444]">Blog</li></NavLink>
+      <NavLink><li className="text-lg font-semibold text-[#444444]">Contact</li></NavLink>
 
     </>
   );
   return (
-      <div className="navbar bg-base-100 mt-4 mb-12">
+      <div className="navbar bg-base-100 mt-4 mb-6 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,8 +39,8 @@ const NavBar = () => {
               {navList}
             </ul>
           </div>
-          <Link to='/' className="btn btn-ghost text-xl">
-            <img src={logo} alt="" />
+          <Link to='/' >
+            <img src={logo} alt="" className="h-16"/>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -51,7 +51,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-outline btn-warning">Appointment</button>
+          <button className="btn btn-outline btn-primary text-black">Appointment</button>
         </div>
       </div>
   );
