@@ -49,8 +49,8 @@ const Login = () => {
             <h2 className='text-[#444444] font-semibold text-md text-center'>Or Sign In with</h2>
             <div className="flex gap-4 justify-center items-center my-2">
               <button className="btn "> <FaFacebookF className="text-xl"/> </button>
-              <button className="btn "> <FaGithub  className="text-xl"/></button>
-              <button className="btn "> <FcGoogle         className="text-xl"/> </button>
+              <button className="btn "> <FaGithub className="text-xl"/></button>
+              <button className="btn "> <FcGoogle className="text-xl"/> </button>
             </div>
             <div className="text-center my-2">
               <h3 className="text-sm text-[#444444]">Don't have an account? <Link to='signUp' className="text-[#FF3811] font-medium">Sign Up</Link> </h3>
